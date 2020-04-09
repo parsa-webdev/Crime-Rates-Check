@@ -1,0 +1,52 @@
+$lightbg: #fafafa;
+$mediumbg: #f1f1f1;
+$darkbg: #2f3136;
+$color: #d5f2ff;
+$mediumdark: #36393f;
+.main {
+  position: relative;
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $mediumdark;
+    padding: 0.5rem 1rem;
+    display: flex;
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      flex: 1;
+      color: #8f8f8f;
+      a {
+        color: $color;
+      }
+    }
+    h6 {
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+      color: #8f8f8f;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    position: relative;
+    footer {
+      padding: 0.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        flex: 1;
+      }
+    }
+  }
+}

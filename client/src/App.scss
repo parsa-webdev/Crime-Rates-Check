@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+@import "./scss/navbar.scss";
+@import "./scss/home.scss";
+@import "./scss/footer.scss";
+* {
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", "sans-serif";
+}
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+button,
+textarea {
+  display: block;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+$lightbg: #eff9ff;
+$mediumbg: #d7f3ff;
+$darkbg: #16374b;
+$mediumdark: #36393f;
+body {
+  margin: 0;
+  background: $mediumdark;
+}
+
+.hide {
+  display: none;
+}

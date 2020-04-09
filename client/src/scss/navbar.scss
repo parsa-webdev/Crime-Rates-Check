@@ -1,0 +1,113 @@
+$lightbg: #f7f7f7;
+$mediumbg: #f1f1f1;
+$darkbg: #2f3136;
+$color: #d5f2ff;
+$mediumdark: #36393f;
+.main {
+  position: relative;
+  header {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    background: $mediumdark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .navbar {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      .logo,
+      nav,
+      .crimeo {
+        flex: 1;
+      }
+      .logo {
+        padding: 1rem 0;
+        cursor: pointer;
+        display: flex;
+        .img {
+          width: 3rem;
+        }
+        .cname {
+          display: flex;
+          align-items: center;
+          padding: 0 0.5rem;
+          p {
+            margin: 0;
+            font-weight: 600;
+            color: $lightbg;
+          }
+        }
+      }
+
+      .crimeo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .powered {
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+            padding: 0 1rem;
+            color: $lightbg;
+          }
+        }
+        .img {
+          background: $darkbg;
+          width: 10rem;
+          padding: 0.3rem 0.5rem;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    header {
+      .navbar {
+        flex-direction: column;
+        padding: 1rem 0;
+        .logo,
+        nav,
+        .crimeo {
+          flex: 1;
+        }
+        .logo {
+          padding: 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          .img {
+            width: 3rem;
+          }
+          .cname {
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            p {
+              margin: 0;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .crimeo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .powered {
+            display: flex;
+            align-items: center;
+            p {
+              margin: 0;
+              padding: 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
