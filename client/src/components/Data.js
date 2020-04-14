@@ -69,7 +69,7 @@ export default function Data() {
   return (
     <div className="home">
       <h1>
-        GET CRIME IN YOUR CITY <br /> SINCE THE LAST YEAR
+        GET CRIME RATES IN YOUR CITY <br /> SINCE THE LAST YEAR
       </h1>
       <form onSubmit={onSubmit}>
         <label>Select a City</label>
