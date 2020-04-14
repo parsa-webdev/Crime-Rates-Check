@@ -30,9 +30,6 @@ export default function Cities() {
       >
         Los Angeles
       </option>
-      <option data-lat="36.737797" data-lon="-119.787125" data-city="Fresno">
-        Fresno
-      </option>
       <option data-lat="35.149532" data-lon="-90.048981" data-city="Memphis">
         Memphis
       </option>
